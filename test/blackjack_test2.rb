@@ -26,47 +26,47 @@ class Deck
     oneone =[]
     oneone = @one.shuffle
     @oneone = "You received a #{oneone[0]}!"
-    oneone = 1
+
     twotwo =[]
     twotwo = @two.shuffle
     @twotwo = "You received a #{twotwo[0]}!"
-    twotwo = 2
+
     threethree =[]
     threethree = @three.shuffle
     @threethree = "You received a #{threethree[0]}!"
-    threethree = 3
+
     fourfour =[]
     fourfour = @four.shuffle
     @fourfour = "You received a #{fourfour[0]}!"
-    fourfour = 4
+
     fivefive =[]
     fivefive = @five.shuffle
     @fivefive = "You received a #{fivefive[0]}!"
-    fivefive = 5
+
     sixsix =[]
     sixsix = @six.shuffle
     @sixsix = "You received a #{sixsix[0]}!"
-    sixsix = 6
+
     sevenseven =[]
     sevenseven = @seven.shuffle
     @sevenseven = "You received a #{sevenseven[0]}!"
-    sevenseven = 7
+
     eighteight =[]
     eighteight = @eight.shuffle
     @eighteight = "You received a #{eighteight[0]}!"
-    eighteight = 8
+
     ninenine =[]
     ninenine = @nine.shuffle
     @ninenine = "You received a #{ninenine[0]}!"
-    ninenine = 9
+
     tenten =[]
     tenten = @ten.shuffle
     @tenten = "You received a #{tenten[0]}!"
-    tenten = 10
+
   end
 
   def deal
-       card = rand(1..10)
+       card = rand(1..13)
      end
   def ace
     puts"You got an ACE. Would you like it to be 1 or 11?"
@@ -78,6 +78,7 @@ class Deck
       return 1
     else
       puts " Enter a valid number"
+      ace
     end
     return @acevalue
   end
@@ -129,7 +130,7 @@ end
         puts  @ninenine
         return 9
       end
-      if card_worth == 10
+      if card_worth > 10
         puts  @tenten
         return 10
       end
