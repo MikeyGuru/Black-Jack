@@ -2,4 +2,4 @@ Black-Jack
 ==========
 
 Week 1 Project assigned by The Iron Yard. 
-First Program ever written
+First Program I've ever written
